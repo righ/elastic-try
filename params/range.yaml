@@ -1,0 +1,8 @@
+---
+query:
+  range:
+    saving:
+      gte: 1000
+      lt: 10000
+from: 5
+size: 3

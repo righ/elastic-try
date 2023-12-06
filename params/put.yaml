@@ -1,0 +1,6 @@
+---
+settings:
+  analysis:
+    tokenizer:
+      my_kuromoji_tokenizer:
+        type: kuromoji_tokenizer

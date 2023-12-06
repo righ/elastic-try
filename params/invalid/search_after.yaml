@@ -1,0 +1,9 @@
+---
+query:
+  match_all: {}
+sort:
+- blood_group.keyword: desc
+- ssn.keyword: asc
+search_after:
+- '094-14-7782'
+size: 10

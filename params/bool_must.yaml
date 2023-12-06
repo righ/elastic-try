@@ -1,0 +1,11 @@
+---
+query:
+  bool:
+    must:
+    - match:
+        name:
+          query: 藤
+    - match:
+        note:
+          query: ホイール
+size: 5

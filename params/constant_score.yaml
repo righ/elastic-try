@@ -1,0 +1,10 @@
+---
+query:
+  constant_score:
+    filter:
+      match:
+        note:
+          query: ダイヤモンド ダニ
+          operator: and
+    boost: 123
+size: 3

@@ -1,0 +1,24 @@
+---
+settings:
+  analysis:
+    tokenizer:
+      my_tokenizer:
+        type: kuromoji_tokenizer
+        mode: normal
+        user_dictionary: dict/user.csv
+    filter:
+      my_synonym:
+        type: synonym_graph
+        synonyms_path: dict/synonym.csv
+    analyzer:
+      my_analyzer:
+        type: custom
+        tokenizer: my_tokenizer
+        char_filter:
+          type: icu_normalizer
+          name: nfkc
+          mode: compose
+        filter:
+        - kuromoji_part_of_speech
+        - kuromoji_stemmer
+        - my_synonym

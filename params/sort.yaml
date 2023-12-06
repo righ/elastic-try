@@ -1,0 +1,7 @@
+---
+query:
+  match_all: {}
+sort:
+- blood_group.keyword: desc
+- ssn.keyword: asc
+size: 5

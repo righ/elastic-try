@@ -1,0 +1,15 @@
+---
+query:
+  function_score:
+    query:
+      term:
+        sex.keyword: F
+    functions:
+    - gauss:
+        created_at:
+          origin: now/d-3M
+          scale: 7d
+          offset: 12h
+          decay: 0.5
+    score_mode: multiply
+size: 10

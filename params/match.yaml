@@ -1,0 +1,6 @@
+---
+query:
+  match:
+    note:
+      query: ダイヤモンド キャビネット バーゲン
+      operator: and

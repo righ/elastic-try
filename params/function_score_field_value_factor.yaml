@@ -1,0 +1,9 @@
+---
+query:
+  function_score:
+    field_value_factor:
+      field: saving
+      factor: 2
+      modifier: ln1p
+      missing: 10000
+size: 5

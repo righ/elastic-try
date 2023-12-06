@@ -1,0 +1,27 @@
+---
+query:
+  function_score:
+    query:
+      bool:
+        must:
+        - term:
+            sex.keyword: F
+        - match_phrase:
+            residence: 東京都
+    functions:
+    - weight: 10
+      filter:
+        term:
+          blood_group.keyword:
+            value: A-
+    - weight: 15
+      filter:
+        term:
+          blood_group.keyword:
+            value: A+
+    - weight: 20
+      filter:
+        term:
+          blood_group.keyword:
+            value: AB+
+size: 5

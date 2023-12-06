@@ -1,0 +1,9 @@
+---
+query:
+  terms:
+    blood_group.keyword:
+    - AB-
+    - O+
+size: 5
+sort:
+- saving: desc

@@ -1,0 +1,13 @@
+---
+query:
+  function_score:
+    query:
+      bool:
+        filter:
+        - term:
+            sex.keyword: M
+    script_score:
+      script:
+        source: Math.abs(doc['current_location'][0]) + Math.abs(doc['current_location'][1])
+    boost_mode: max
+size: 10

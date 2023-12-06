@@ -1,0 +1,6 @@
+---
+query:
+  range:
+    created_at:
+      gte: now-1M
+size: 5

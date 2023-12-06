@@ -1,0 +1,16 @@
+---
+query:
+  boosting:
+    positive:
+      terms:
+        blood_group.keyword:
+        - A+
+        - A-
+    negative:
+      term:
+        blood_group.keyword: A-
+    negative_boost: 0.3
+size: 10
+sort:
+- ssn.keyword: asc
+- _score: asc

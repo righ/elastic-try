@@ -1,0 +1,6 @@
+---
+query:
+  term:
+    blood_group.keyword:
+      value: AB-
+size: 5

@@ -1,0 +1,20 @@
+---
+aggs:
+  saving_total:
+    sum:
+      field: saving
+  saving_avg:
+    avg:
+      field: saving
+  saving_by_blood_group:
+    terms:
+      field: blood_group.keyword
+      exclude:
+      - AB+
+    aggs:
+      saving_total:
+        sum:
+          field: saving
+      saving_avg:
+        avg:
+          field: saving

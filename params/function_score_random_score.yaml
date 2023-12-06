@@ -1,0 +1,6 @@
+---
+query:
+  function_score:
+    random_score: {}
+    boost: 1000
+size: 5

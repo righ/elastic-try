@@ -1,0 +1,4 @@
+---
+query:
+  match_phrase:
+    note: 出演者ダッシュ

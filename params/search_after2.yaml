@@ -1,0 +1,10 @@
+---
+query:
+  match_all: {}
+sort:
+- blood_group.keyword: desc
+- ssn.keyword: asc
+search_after:
+- O-
+- 025-03-1464
+size: 5

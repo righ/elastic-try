@@ -1,0 +1,108 @@
+---
+profile1:
+  mappings:
+    properties:
+      address:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      birthdate:
+        type: date
+      blood_group:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      company:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      created_at:
+        type: date
+      current_location:
+        type: float
+      favirite_words:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      id:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      ip_address:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      job:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      mail:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      married:
+        type: boolean
+      name:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      note:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      residence:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      saving:
+        type: long
+      serial_number:
+        type: long
+      sex:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      ssn:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      updated_at:
+        type: date
+      username:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
+      website:
+        type: text
+        fields:
+          keyword:
+            type: keyword
+            ignore_above: 256
